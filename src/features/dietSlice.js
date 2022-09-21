@@ -54,13 +54,13 @@ const dietSlice = createSlice({
   reducers: {},
   extraReducers: (builder) => {
     builder
-    addCace(fetchDiet.fulfilled, (state, action) => {
+    .addCase(fetchDiet.fulfilled, (state, action) => {
       state.diet = action.payload;
     })
-      .addCace(addDiet.fulfilled, (state, action) => {
+      .addCase(addDiet.fulfilled, (state, action) => {
         state.diet.push(action.payload);
       })
-      .addCace(deleteDiet.fulfilled, (state, action) => {
+      .addCase(deleteDiet.fulfilled, (state, action) => {
         state.diet = state.deleteDiet.fillter(
           (item) => item._id === action.payload._id
         );
