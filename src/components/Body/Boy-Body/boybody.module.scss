@@ -1,0 +1,219 @@
+.boy_section {
+  height: 100vh;
+  .muscle_map {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    .background {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 1000px;
+      opacity: 1;
+    }
+    .traps_a {
+      position: absolute;
+      top: 149px;
+      left: 256px;
+      width: 30px;
+    }
+    .traps_b {
+      position: absolute;
+      top: 148.8px;
+      left: 330px;
+      width: 30px;
+    }
+    .shoulders_a {
+      position: absolute;
+      top: 167.5px;
+      left: 212px;
+      width: 62px;
+      z-index: 2;
+    }
+    .shoulders_b {
+      position: absolute;
+      top: 167.5px;
+      left: 342px;
+      width: 62px;
+      z-index: 2;
+    }
+    .pecs {
+      position: absolute;
+      top: 169.5px;
+      left: 231.6px;
+      width: 151.9px;
+    }
+    .biceps_a {
+      position: absolute;
+      top: 211.5px;
+      left: 193.5px;
+      width: 49.5px;
+    }
+    .biceps_b {
+      position: absolute;
+      top: 212px;
+      left: 373px;
+      width: 51px;
+    }
+    .forearm_a {
+      position: absolute;
+      top: 249px;
+      left: 149px;
+      width: 65px;
+    }
+    .forearm_b {
+      position: absolute;
+      top: 252px;
+      left: 402.7999999999999px;
+      width: 64.58898989889px;
+      height: 85px;
+      transform: rotate(1.1deg);
+    }
+    .obliques {
+      position: relative;
+      top: 187px;
+      left: 278px;
+      width: 60px;
+    }
+    .quads_a {
+      position: relative;
+      top: 329px;
+      left: 180px;
+      width: 51.2px;
+    }
+    .quads_b {
+      position: relative;
+      top: 329px;
+      left: 213px;
+      width: 51.2px;
+    }
+    .calves_a {
+      position: relative;
+      top: 400px;
+      left: 73.99999px;
+      width: 40px;
+    }
+    .calves_b {
+      position: relative;
+      top: 400px;
+      left: 137px;
+      width: 40px;
+    }
+    .back_traps_a {
+      position: absolute;
+      top: 152px;
+      left: 658px;
+      width: 100px;
+    }
+    .back_traps_b {
+      position: absolute;
+      top: 175.5px;
+      left: 677.5px;
+      width: 62px;
+    }
+    .back_shoulders_a {
+      position: absolute;
+      top: 165.1px;
+      left: 615.2px;
+      width: 57.5px;
+    }
+    .back_shoulders_b {
+      position: absolute;
+      top: 165.1px;
+      left: 744px;
+      width: 58px;
+    }
+    .triceps_a {
+      position: absolute;
+      top: 201px;
+      left: 590.5px;
+      width: 51px;
+    }
+    .triceps_b {
+      position: absolute;
+      top: 201px;
+      left: 775.5px;
+      width: 51px;
+    }
+    .back_lats_a {
+      position: absolute;
+      top: 175.3px;
+      left: 639.7px;
+      width: 59.5px;
+    }
+    .back_lats_b {
+      position: absolute;
+      top: 175.3px;
+      left: 717.5px;
+      width: 59.5px;
+    }
+    .back_lower {
+      position: absolute;
+      top: 237px;
+      left: 680.5px;
+      width: 56px;
+    }
+    .back_forearms_a {
+      position: absolute;
+      top: 253.8px;
+      left: 548.5px;
+      width: 65px;
+    }
+    .back_forearms_b {
+      position: absolute;
+      top: 253.8px;
+      left: 803.5px;
+      width: 65px;
+    }
+    .back_glutes {
+      position: absolute;
+      top: 318.5px;
+      left: 658.3px;
+      width: 99.8px;
+      z-index: 2;
+    }
+    .back_hamstrings_a {
+      position: absolute;
+      top: 325px;
+      left: 641px;
+      width: 59px;
+    }
+    .back_hamstrings_b {
+      position: absolute;
+      top: 325px;
+      left: 717px;
+      width: 59px;
+    }
+    .back_calves_a {
+      position: absolute;
+      top: 522px;
+      left: 633.5px;
+      width: 43.5px;
+    }
+    .back_calves_b {
+      position: absolute;
+      top: 522px;
+      left: 739.5px;
+      width: 43.5px;
+    }
+    .obliques_a {
+      position: absolute;
+      top: 217px;
+      left: 241.5px;
+      width: 37.5px;
+    }
+    .obliques_b {
+      position: absolute;
+      top: 217px;
+      left: 336.5px;
+      width: 37.5px;
+    }
+    img {
+      opacity: 0;
+      &:hover {
+        opacity: 1;
+        cursor: pointer;
+      }
+    }
+  }
+}

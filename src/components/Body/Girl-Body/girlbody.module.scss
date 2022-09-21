@@ -1,0 +1,218 @@
+.girl_section {
+    height: 100vh;
+    .muscle_map {
+      position: relative;
+      width: 90%;
+      margin: 0 auto;
+      .background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 1000px;
+        opacity: 1;
+      }
+      .traps_a {
+        position: absolute;
+        top: 167px;
+        left: 255px;
+        width: 23px;
+      }
+      .traps_b {
+        position: absolute;
+        top: 167px;
+        left: 315px;
+        width: 24px;
+      }
+      .shoulders_a {
+        position: absolute;
+        top: 181px;
+        left: 216px;
+        width: 46px;
+        z-index: 2;
+      }
+      .shoulders_b {
+        position: absolute;
+        top: 181px;
+        left: 331.5px;
+        width: 46px;
+        z-index: 2;
+      }
+      .pecs {
+        position: absolute;
+        top: 183px;
+        left: 234px;
+        width: 125px;
+      }
+      .biceps_a {
+        position: absolute;
+        top: 214.5px;
+        left: 198px;
+        width: 47px;
+      }
+      .biceps_b {
+        position: absolute;
+        top: 214.5px;
+        left: 348.2px;
+        width: 47px;
+      }
+      .forearm_a {
+        position: absolute;
+        top: 252.9px;
+        left: 155px;
+        width: 59px;
+      }
+      .forearm_b {
+        position: absolute;
+        top: 253.5px;
+        left: 380px;
+        width: 59px;
+      }
+      .obliques {
+        position: relative;
+        top: 181px;
+        left: 272px;
+        width: 50px;
+      }
+      .quads_a {
+        position: relative;
+        top: 326.5px;
+        left: 182px;
+        width: 44px;
+      }
+      .quads_b {
+        position: relative;
+        top: 326.5px;
+        left: 223px;
+        width: 44.5px;
+      }
+      .calves_a {
+        position: relative;
+        top: 400px;
+        left: 89px;
+        width: 33.5px;
+      }
+      .calves_b {
+        position: relative;
+        top: 399px;
+        left: 161px;
+        width: 34px;
+      }
+      .back_traps_a {
+        position: absolute;
+        top: 157px;
+        left: 655.5px;
+        width: 90px;
+      }
+      .back_traps_b {
+        position: absolute;
+        top: 175.5px;
+        left: 670px;
+        width: 62px;
+      }
+      .back_shoulders_a {
+        position: absolute;
+        top: 172px;
+        left: 621px;
+        width: 49px;
+      }
+      .back_shoulders_b {
+        position: absolute;
+        top: 174px;
+        left: 731.5px;
+        width: 47.5px;
+      }
+      .triceps_a {
+        position: absolute;
+        top: 204px;
+        left: 595.5px;
+        width: 50px;
+      }
+      .triceps_b {
+        position: absolute;
+        top: 204px;
+        left: 755.5px;
+        width: 50px;
+      }
+      .back_lats_a {
+        position: absolute;
+        top: 182px;
+        left: 645.5px;
+        width: 49px;
+      }
+      .back_lats_b {
+        position: absolute;
+        top: 182px;
+        left: 707px;
+        width: 49px;
+      }
+      .back_lower {
+        position: absolute;
+        top: 242.5px;
+        left: 675px;
+        width: 51px;
+      }
+      .back_forearms_a {
+        position: absolute;
+        top: 252px;
+        left: 553.5px;
+        width: 57.5px;
+      }
+      .back_forearms_b {
+        position: absolute;
+        top: 253px;
+        left: 790.5px;
+        width: 57.5px;
+      }
+      .back_glutes {
+        position: absolute;
+        top: 308px;
+        left: 648px;
+        width: 104px;
+        z-index: 2;
+      }
+      .back_hamstrings_a {
+        position: absolute;
+        top: 308px;
+        left: 635.5px;
+        width: 48px;
+      }
+      .back_hamstrings_b {
+        position: absolute;
+        top: 308px;
+        left: 718px;
+        width: 48px;
+      }
+      .back_calves_a {
+        position: absolute;
+        top: 514.5px;
+        left: 626.5px;
+        width: 36px;
+      }
+      .back_calves_b {
+        position: absolute;
+        top: 514.5px;
+        left: 738.5px;
+        width: 36px;
+      }
+      .obliques_a {
+        position: absolute;
+        top: 218.5px;
+        left: 244.5px;
+        width: 27.5px;
+      }
+      .obliques_b {
+        position: absolute;
+        top: 219px;
+        left: 320.5px;
+        width: 27.5px;
+      }
+      img {
+        opacity: 0;
+        &:hover {
+          opacity: 1;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  
