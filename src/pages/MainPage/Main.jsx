@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./main.module.scss";
+import Product from '../../components/Product/Product';
 
 const Main = () => {
   return (
@@ -12,12 +13,16 @@ const Main = () => {
             <h4>Find the right and healthy way to eat with us</h4>
             <button>View diets</button>
           </div>
+          
+        {/* 
+        <div>
+            <Product />
         </div>
         <div className={styles.block}></div>
       </section>
       <section className={styles.blocks}>
         
-      </section>
+      </section>*/}
     </>
   );
 };
