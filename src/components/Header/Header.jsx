@@ -11,10 +11,11 @@ const Header = () => {
       </div>
       <div className={styles.nav_top}>
         <ul>
-          <li><Link to={"/about"} className={styles.link}>About</Link></li>
+          <li><Link to={"/"} className={styles.link}>Main</Link></li>
           <li><Link to={"/diet"} className={styles.link}>diet</Link></li>
+          <li><Link to={"/about"} className={styles.link}>About</Link></li>
           <li><Link to={"/about"} className={styles.link}>calculate weight</Link></li>
-          <li><Link to={"/about"} className={styles.link}>Main</Link></li>
+          
         </ul>
       </div>
     </header>

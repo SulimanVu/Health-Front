@@ -1,0 +1,57 @@
+.banner{
+    .main_img{
+        background-color: #151515;
+        height: 700px;
+        background-image: url("../../public/main_right2.jpg");
+        background-repeat: no-repeat;
+        background-size: 75vh;
+        background-attachment: fixed;
+        background-position: 100% 0;
+        overflow: hidden;
+        .text_content{
+            width: 70%;
+            height: 100vh;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            justify-content: center;
+            line-height: 55px;
+            color: #fff;
+            cursor: default;
+            h3{
+                font-size: 32px;
+                font-weight: 300;
+                font-style: italic;
+            }
+            h1{
+                font-weight: 600;
+                font-size: 42px;
+            }
+            h4{
+                font-weight: 400;
+                font-size: 22px;
+                font-style: italic;
+                color: #ffd600;
+            }
+            button{
+                width: fit-content;
+                margin: 20px auto;
+                font-size: 17px;
+                border-radius: 16px;
+                padding: 4px 20px;
+                border: 2px solid #151515;
+                transition: .5s;
+                cursor: pointer;
+                &:hover{
+                    color: #ffd600;
+                    background-color: #151515;
+                    border: 2px solid #fff;
+                }
+            }
+        }
+    }
+}
+.blocks{
+
+}
