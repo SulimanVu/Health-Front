@@ -1,7 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styles from "./boybody.module.scss";
+import { useDispatch, useSelector } from "react-redux";
+import { fetchMuscle } from "../../../features/muscleSlice";
 
 const BoyBody = () => {
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(fetchMuscle());
+  }, [dispatch]);
+
+  const muscle = useSelector((state) =>
+    state.muscle.muscle.map((item) => {
+      return item.name;
+    })
+  );
+
   return (
     <section className={styles.boy_section}>
       <div className={styles.muscle_map}>
@@ -10,11 +23,14 @@ const BoyBody = () => {
           src="https://musclewiki.com/static/Crops/00.-Blank-Figures.png"
           alt="#"
         />
-        <img
-          className={styles.traps_a}
-          src="https://musclewiki.com/static/Crops/08.-TrapsLeft.png"
-          alt="#"
-        />
+          <img
+            className={styles.traps_a}
+            src="https://musclewiki.com/static/Crops/08.-TrapsLeft.png"
+            alt="#"
+          title="erwwerewr"
+
+          />
+
         <img
           className={styles.traps_b}
           src="https://musclewiki.com/static/Crops/08.-TrapsRight.png"
