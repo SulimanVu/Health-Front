@@ -10,6 +10,8 @@ import Main from "./pages/MainPage/Main";
 import SignIn from "./pages/Auth/Signin";
 import SignUp from "./pages/Auth/Signup";
 import Calc from "./pages/Calc/Calc";
+import CalcOnDay from "./pages/Calc/CalcOnDay/CalcOnDay";
+import CalcWeight from "./pages/Calc/CalcWeight/CalcWeight";
 
 export const App = () => {
   return (
@@ -19,9 +21,13 @@ export const App = () => {
         <Route path="/signin" element={<SignIn />} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/" element={<Main />} />
-        <Route path="/calc" element={<Calc />} />
+        <Route path="/calc" element={<Calc />}>
+        <Route index element={<Calc />} />
+          <Route path="calconday" element={<CalcOnDay />} />
+          <Route path="calcweight" element={<CalcWeight />} />
+        </Route>
         <Route path="/about" element={<About />} />
-        <Route path="/body" element={<Body/>}>
+        <Route path="/body" element={<Body />}>
           <Route index element={<Body />} />
           <Route path="boy" element={<BoyBody />} />
           <Route path="girl" element={<GirlBody />} />
