@@ -27,54 +27,61 @@ const BoyBody = () => {
             className={styles.traps_a}
             src="https://musclewiki.com/static/Crops/08.-TrapsLeft.png"
             alt="#"
-          title="erwwerewr"
-
+            title="Трапецивидная мышца"
           />
-
         <img
           className={styles.traps_b}
           src="https://musclewiki.com/static/Crops/08.-TrapsRight.png"
           alt="#"
+          title="Трапецивидная мышца"
         />
         <img
           className={styles.shoulders_a}
           src="https://musclewiki.com/static/Crops/07.A-Deltoids.png"
           alt="#"
+          title="Плечо"
         />
         <img
           className={styles.shoulders_b}
           src="https://musclewiki.com/static/Crops/07.B-Deltoids.png"
           alt="#"
+          title="Плечо"
         />
         <img
           className={styles.pecs}
           src="https://musclewiki.com/static/Crops/06.-Pecs.png"
           alt="#"
+          title="Грудь"
         />
         <img
           className={styles.biceps_a}
           src="https://musclewiki.com/static/Crops/05.A-Biceps.png"
           alt="#"
+          title="Бицепс"
         />
         <img
           className={styles.biceps_b}
           src="https://musclewiki.com/static/Crops/05.B-Biceps.png"
           alt="#"
+          title="Бицепс"
         />
         <img
           className={styles.forearm_a}
           src="https://musclewiki.com/static/Crops/14.A-Forearms.png"
           alt="#"
+          title="Предплечье"
         />
         <img
           className={styles.forearm_b}
           src="https://musclewiki.com/static/Crops/14.B-Forearms.png"
           alt="#"
+          title="Предплечье"
         />
         <img
           className={styles.obliques}
           src="https://musclewiki.com/static/Crops/04.-Obliques.png"
           alt="#"
+          title="Пресс"
         />
         <img
           className={styles.quads_a}
