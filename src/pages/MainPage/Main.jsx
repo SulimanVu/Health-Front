@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { Link } from "react-router-dom";
 import { fetchDiet } from "../../features/dietSlice";
 import styles from "./main.module.scss";
 
@@ -19,7 +18,7 @@ const Main = () => {
             <h3>Do you like to eat tasty and healthy?</h3>
             <h1>Don't wait !</h1>
             <h4>Find the right and healthy way to eat with us</h4>
-            <button><Link to={"/#diet"}>View diets</Link></button>
+            <button><a to={"/#diet"}>View diets</a></button>
           </div>
         </div>
         <div className={styles.block}></div>
