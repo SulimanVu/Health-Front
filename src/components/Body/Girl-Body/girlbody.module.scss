@@ -2,8 +2,10 @@
     height: 100vh;
     .muscle_map {
       position: relative;
-      width: 90%;
-      margin: 0 auto;
+      width: 65%;
+      margin: 60px auto 0;
+      min-height: 100vh;
+      background-color: #151515;
       .background {
         position: absolute;
         top: 0;
