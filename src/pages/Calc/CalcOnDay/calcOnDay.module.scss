@@ -1,0 +1,53 @@
+.form_conteiner{
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form{
+    border-radius: 10px;
+    padding: 10px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    background-color: #393939;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+.form input{
+    background-color: #fff;
+    margin: 10px;
+    width: 50%;
+    font-weight: 500;
+}
+.form input::placeholder{
+    color: #151515;
+    font-weight: 500;
+}
+
+.form select{
+    background-color: #ffd600;
+    font-weight: 500;
+    border-radius: 10px;
+    height: 30px;
+    width: 50%;
+}
+.form button{
+    border: #ffd600;
+    border-radius: 10px;
+    height: 25px;
+    font-weight: 500;
+    background-color: #ffd600;
+    cursor: pointer;
+    width: 20%;
+}
+.calories{
+    height: 50px;
+    color: #ffd600;
+}
+.form button:active{
+    box-shadow: inset 0px 0px 10px black;
+}
