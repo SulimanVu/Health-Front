@@ -8,11 +8,9 @@ const Body = () => {
 
   return (
     <div className={styles.main}>
-      <div className={styles.sviper}>
-        <Link to={"/body/boy"}>male</Link>
+        <Link to={"/body/boy"}>male</Link><br/>
         <Link to={"girl"}>female</Link>
         <Outlet />
-      </div>
     </div>
   );
 };
