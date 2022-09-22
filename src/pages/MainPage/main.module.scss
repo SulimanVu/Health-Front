@@ -6,7 +6,7 @@
         background-repeat: no-repeat;
         background-size: 75vh;
         background-attachment: fixed;
-        background-position: 100% 0;
+        background-position: 100% 20%;
         overflow: hidden;
         .text_content{
             width: 70%;
@@ -49,6 +49,33 @@
                     border: 2px solid #fff;
                 }
             }
+        }
+    }
+}
+.diet_blocks{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    background-color: #151515;
+    color: #fff;
+    div{
+        width: 70%;
+        margin: 15px auto;
+        padding: 10px 0;
+        border-bottom: 2px solid #ffd600;
+        text-align: center;
+        transition: .7s;
+        cursor: pointer;
+        &:hover{
+            width: 40%;
+            margin: 10px auto;
+            scale: 1.05;
+            box-sizing: border-box;
+        }
+        h1{
+            font-weight: 200;
         }
     }
 }
