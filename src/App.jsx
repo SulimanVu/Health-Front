@@ -22,13 +22,11 @@ export const App = () => {
         <Route path="/signup" element={<SignUp />} />
         <Route path="/" element={<Main />} />
         <Route path="/calc" element={<Calc />}>
-        <Route index element={<Calc />} />
           <Route path="calconday" element={<CalcOnDay />} />
           <Route path="calcweight" element={<CalcWeight />} />
         </Route>
         <Route path="/about" element={<About />} />
         <Route path="/body" element={<Body />}>
-          <Route index element={<Body />} />
           <Route path="boy" element={<BoyBody />} />
           <Route path="girl" element={<GirlBody />} />
         </Route>
