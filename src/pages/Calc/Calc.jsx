@@ -1,6 +1,6 @@
 import React from "react";
 import style from "./Calc.module.scss";
-import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 
 const Calc = () => {
   return (
@@ -8,6 +8,7 @@ const Calc = () => {
         <div>
           <Link to={'calconday'}>Расчитать каллорийность съеденной еды за сегодня</Link>
           <Link to={'calcweight'}>Расчитать каллорийность для поддержания веса</Link>
+          <Outlet />
         </div>
       </div>
   );
