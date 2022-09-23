@@ -6,11 +6,9 @@ import cn from "classnames";
 
 const Body = () => {
   const [male, setMale] = useState(true);
-  const [female, setFemale] = useState(false);
 
   const handleClick = () => {
     setMale(!male);
-    setFemale(!female);
   };
 
   return (
@@ -24,7 +22,7 @@ const Body = () => {
           male
         </Link>
         <Link
-          className={cn(styles.link, female && styles.active)}
+          className={cn(styles.link, !male && styles.active)}
           onClick={handleClick}
           to={"girl"}
         >
