@@ -6,11 +6,9 @@ import cn from "classnames";
 
 const Calc = () => {
   const [first, setFirst] = useState(true);
-  const [second, setSecond] = useState(false);
 
   const handleClick = () => {
     setFirst(!first);
-    setSecond(!second);
   };
   return (
     <div className={styles.col}>
@@ -18,7 +16,7 @@ const Calc = () => {
         <Link className={cn(styles.link, first && styles.active)} onClick={handleClick} to={"calconday"}>
           Расчитать каллорийность съеденной еды за сегодня
         </Link>
-        <Link className={cn(styles.link, second && styles.active)} onClick={handleClick} to={"calcweight"}>
+        <Link className={cn(styles.link, !first && styles.active)} onClick={handleClick} to={"calcweight"}>
           Расчитать каллорийность для поддержания веса
         </Link>
       </div>
