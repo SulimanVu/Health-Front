@@ -1,0 +1,30 @@
+.col {
+  width: 100%;
+  background-color: #151515;
+  .links {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    .link {
+      font-size: 18px;
+      font-weight: 400;
+      display: flex;
+      align-items: center;
+      padding: 5px 15px;
+      text-decoration: none;
+      border-bottom: 1px solid #fff;
+      color: #fff;
+      transition: 0.4s;
+      cursor: pointer;
+      &:hover {
+        color: #ffc000;
+        border-bottom: 1px solid #ffc000;
+      }
+    }
+  }
+}
+.active {
+  color: #ffc000 !important;
+  border-bottom: 1px solid #ffc000 !important;
+}

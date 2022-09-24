@@ -2,7 +2,7 @@
   margin: 0;
   font-family: "Montserrat", sans-serif;
 }
-.head{
+.head {
   position: relative;
   height: 100px;
   background-color: #151515;
@@ -50,7 +50,6 @@
   }
 }
 
-
 li {
   font-size: 20px;
   cursor: pointer;
@@ -66,7 +65,7 @@ li {
     border-bottom: 0;
     text-decoration: none;
     color: #ffc000;
-    transition: .5s;
+    transition: 0.5s;
     &:hover {
       font-weight: 400;
       border: none;
@@ -76,4 +75,10 @@ li {
       box-sizing: border-box;
     }
   }
+}
+
+.active {
+  color: #ffc000 !important;
+  padding-bottom: 2px;
+  border-bottom: 1px solid #ffc000 !important;
 }
