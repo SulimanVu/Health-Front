@@ -1,9 +1,50 @@
-.first_block{
-    color: #fff;
+.info_block {
+  color: #ffd600;
+  display: flex;
+  justify-content: space-between;
+  height: 80vh;
+  align-items: center;
+  div {
+    margin: 20px auto;
+    width: 48%;
+  }
+  .muscle_img {
+    width: fit-content;
+    height: 400px;
+    align-items: center;
+    align-content: center;
     display: flex;
-    justify-content: space-between;
-    div{
-        margin: 20px auto;
-        width: 48%;
+    img {
+      align-self: center;
+      height: 80%;
     }
+  }
+  p {
+    color: #fff;
+    margin-top: 20px;
+    line-height: 24px;
+  }
+  .muscle_text {
+    padding: 0 100px;
+    box-sizing: border-box;
+  }
+}
+
+.train_block {
+  width: 95%;
+  h1 {
+    color: #ffd600;
+    text-align: center;
+  }
+  .train_img {
+    width: 95%;
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    img {
+      width: 30%;
+      margin: 20px;
+    }
+  }
 }

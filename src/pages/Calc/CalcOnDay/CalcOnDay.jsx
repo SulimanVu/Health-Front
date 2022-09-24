@@ -19,7 +19,7 @@ const CalcOnDay = () => {
 
   function handleCalculate(e) {
     setActive(true)
-    const productCalories = products.find((item) => {
+    const productCalories = products.find(item => {
         if(item.title === product){
             return item
         }

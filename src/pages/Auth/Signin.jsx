@@ -1,6 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
+import { Link } from 'react-router-dom';
 import { authSignIn } from '../../features/applicationSlice';
 import styles from './Auth.module.scss'
 
@@ -57,7 +58,7 @@ const SignIn = () => {
                                 />
                                 <br />
                                 <button className={styles.btn} type='submit' onClick={handleSignIn}>Войти</button>
-                                <a className={styles.loginLink} href="#">Забыли свой пароль?</a>
+                                <Link className={styles.loginLink} to="#">Забыли свой пароль?</Link>
                             </form>
                         </div>
                     </div>
