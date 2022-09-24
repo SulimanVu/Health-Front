@@ -12,6 +12,7 @@ import SignUp from "./pages/Auth/Signup";
 import Calc from "./pages/Calc/Calc";
 import CalcOnDay from "./pages/Calc/CalcOnDay/CalcOnDay";
 import CalcWeight from "./pages/Calc/CalcWeight/CalcWeight";
+import OneMuscle from "./pages/OneMuscle/OneMuscle";
 
 export const App = () => {
   return (
@@ -21,6 +22,7 @@ export const App = () => {
         <Route path="/signin" element={<SignIn />} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/" element={<Main />} />
+        <Route path="/oneMuscle" element={<OneMuscle />} />
         <Route path="/calc" element={<Calc />}>
           <Route path="calconday" element={<CalcOnDay />} />
           <Route path="calcweight" element={<CalcWeight />} />
