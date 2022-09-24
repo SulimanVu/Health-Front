@@ -30,6 +30,17 @@ const Header = () => {
             </li>
             <li>
               <Link
+                to={"/diet"}
+                className={cn(
+                  styles.link,
+                  location.pathname === "/diet" && styles.active
+                )}
+              >
+                diet
+              </Link>
+            </li>
+            <li>
+              <Link
                 to={"/about"}
                 className={cn(
                   styles.link,

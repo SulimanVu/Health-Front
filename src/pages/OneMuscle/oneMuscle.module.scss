@@ -1,3 +1,9 @@
-.muscle_main{
-    
+.first_block{
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    div{
+        margin: 20px auto;
+        width: 48%;
+    }
 }
