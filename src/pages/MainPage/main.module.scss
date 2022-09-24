@@ -1,6 +1,8 @@
+@import "../../index.scss";
+
 .banner {
   .main_img {
-    background-color: #151515;
+    color: $c-black;
     height: 650px;
     background-image: url("../../public/main_right2.jpg");
     background-repeat: no-repeat;
@@ -32,7 +34,7 @@
         font-weight: 400;
         font-size: 22px;
         font-style: italic;
-        color: #ffd600;
+        color: $c-yellow;
       }
       button {
         position: relative;
@@ -42,12 +44,12 @@
         font-weight: 500;
         border-radius: 16px;
         padding: 4px 20px;
-        border: 2px solid #151515;
+        border: 2px solid $c-black;
         transition: 0.5s;
         cursor: pointer;
         &:hover {
-          color: #ffd600;
-          background-color: #151515;
+          color: $c-yellow;
+          background-color: $c-black;
           border: 2px solid #fff;
         }
       }
@@ -60,13 +62,13 @@
   flex-direction: column;
   justify-content: center;
   margin: auto;
-  background-color: #151515;
+  background-color: $c-black;
   color: #fff;
   div {
     width: 70%;
     margin: 15px auto;
     padding: 10px 0;
-    border-bottom: 2px solid #ffd600;
+    border-bottom: 2px solid $c-yellow;
     text-align: center;
     transition: 0.7s;
     cursor: pointer;

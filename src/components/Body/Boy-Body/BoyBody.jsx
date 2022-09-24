@@ -1,19 +1,22 @@
 import React, { useEffect } from "react";
 import styles from "./boybody.module.scss";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { fetchMuscle } from "../../../features/muscleSlice";
+import { saveMuscle } from "../../../features/muscleSlice";
+import { useNavigate } from "react-router-dom";
 
 const BoyBody = () => {
   const dispatch = useDispatch();
+  const navigate = useNavigate();
+
   useEffect(() => {
     dispatch(fetchMuscle());
   }, [dispatch]);
 
-  const muscle = useSelector((state) =>
-    state.muscle.muscle.map((item) => {
-      return item.name;
-    })
-  );
+  const handleClick = (e) => {
+    dispatch(saveMuscle(e.target.title));
+    navigate("/oneMuscle");
+  };
 
   return (
     <section className={styles.boy_section}>
@@ -23,85 +26,99 @@ const BoyBody = () => {
           src="https://musclewiki.com/static/Crops/00.-Blank-Figures.png"
           alt="#"
         />
-          <img
-            className={styles.traps_a}
-            src="https://musclewiki.com/static/Crops/08.-TrapsLeft.png"
-            alt="#"
-            title="Трапецивидная мышца"
-          />
+        <img
+          className={styles.traps_a}
+          src="https://musclewiki.com/static/Crops/08.-TrapsLeft.png"
+          alt="#"
+          onClick={(e) => handleClick(e)}
+          title="Трапецивидная мышца"
+        />
         <img
           className={styles.traps_b}
           src="https://musclewiki.com/static/Crops/08.-TrapsRight.png"
           alt="#"
+          onClick={(e) => handleClick(e)}
           title="Трапецивидная мышца"
         />
         <img
           className={styles.shoulders_a}
           src="https://musclewiki.com/static/Crops/07.A-Deltoids.png"
           alt="#"
+          onClick={(e) => handleClick(e)}
           title="Плечо"
         />
         <img
           className={styles.shoulders_b}
           src="https://musclewiki.com/static/Crops/07.B-Deltoids.png"
           alt="#"
+          onClick={(e) => handleClick(e)}
           title="Плечо"
         />
         <img
           className={styles.pecs}
           src="https://musclewiki.com/static/Crops/06.-Pecs.png"
           alt="#"
-          title="Грудь"
+          onClick={(e) => handleClick(e)}
+          title="Грудная клетка"
         />
         <img
           className={styles.biceps_a}
           src="https://musclewiki.com/static/Crops/05.A-Biceps.png"
           alt="#"
+          onClick={(e) => handleClick(e)}
           title="Бицепс"
         />
         <img
           className={styles.biceps_b}
           src="https://musclewiki.com/static/Crops/05.B-Biceps.png"
           alt="#"
+          onClick={(e) => handleClick(e)}
           title="Бицепс"
         />
         <img
           className={styles.forearm_a}
           src="https://musclewiki.com/static/Crops/14.A-Forearms.png"
           alt="#"
+          onClick={(e) => handleClick(e)}
           title="Предплечье"
         />
         <img
           className={styles.forearm_b}
           src="https://musclewiki.com/static/Crops/14.B-Forearms.png"
           alt="#"
+          onClick={(e) => handleClick(e)}
           title="Предплечье"
         />
         <img
           className={styles.obliques}
           src="https://musclewiki.com/static/Crops/04.-Obliques.png"
           alt="#"
+          onClick={(e) => handleClick(e)}
           title="Пресс"
         />
         <img
           className={styles.quads_a}
           src="https://musclewiki.com/static/Crops/01.A-Quads.png"
           alt="#"
+          title="Квадрицепс"
         />
         <img
           className={styles.quads_b}
           src="https://musclewiki.com/static/Crops/01.B-Quads.png"
           alt="#"
+          title="Квадрицепс"
         />
         <img
           className={styles.calves_a}
           src="https://musclewiki.com/static/Crops/13.A-Calves.png"
           alt="#"
+          title="Икроно́жная мышца"
         />
         <img
           className={styles.calves_b}
           src="https://musclewiki.com/static/Crops/13.B-Calves.png"
           alt="#"
+          title="Икроно́жная мышца"
         />
         <img
           className={styles.back_traps_a}
