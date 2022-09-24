@@ -1,6 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
+import { Link } from 'react-router-dom';
 import { authSignUp } from '../../features/applicationSlice';
 import styles from './Auth.module.scss'
 
@@ -55,7 +56,7 @@ const SignUp = () => {
                                 />
                                 <br />
                                 <button class={styles.btn} type='submit' onClick={handleSignUp}>Зарегистрироваться</button>
-                                <a class={styles.loginLink} href="#">У вас есть аккаунт?</a>
+                                <Link class={styles.loginLink} to="#">У вас есть аккаунт?</Link>
                             </form>
                         </div>
                     </div>

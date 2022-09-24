@@ -40,37 +40,37 @@ const muscleSlice = createSlice({
   name: "muscle",
   initialState,
   reducers: {
-    saveMuscle: (state, action)=>{
+    saveMuscle: (state, action) => {
       console.log(action.payload);
-      state.oneMuscle = action.payload
-    }
+      state.oneMuscle = action.payload;
+    },
   },
   extraReducers: (builder) =>
     builder
-    ////////////////FETCH-MUSCLE/////////////////
+      ////////////////FETCH-MUSCLE/////////////////
       .addCase(fetchMuscle.fulfilled, (state, action) => {
         state.muscle = action.payload;
-        state.loader = false
+        state.loader = false;
       })
       .addCase(fetchMuscle.pending, (state) => {
         state.loader = true;
       })
       .addCase(fetchMuscle.rejected, (state, action) => {
         state.muscle = action.payload;
-        state.loader = false
+        state.loader = false;
       })
-    ////////////////ADD-MUSCLE//////////////////
+      ////////////////ADD-MUSCLE//////////////////
       .addCase(addMuscle.fulfilled, (state, action) => {
         state.muscle.push(action.payload);
-        state.loader = false
+        state.loader = false;
       })
       .addCase(addMuscle.pending, (state) => {
-        state.loader = true
+        state.loader = true;
       })
       .addCase(addMuscle.rejected, (state, action) => {
         state.muscle.push(action.payload);
-        state.loader = false
-      })
+        state.loader = false;
+      }),
 });
 
 export const { saveMuscle } = muscleSlice.actions;
