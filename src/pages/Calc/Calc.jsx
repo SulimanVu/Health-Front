@@ -1,5 +1,5 @@
 import React from "react";
-import style from "./Calc.module.scss";
+
 import { Link, Outlet } from "react-router-dom";
 
 const Calc = () => {

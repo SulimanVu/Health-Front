@@ -12,6 +12,7 @@ import SignUp from "./pages/Auth/Signup";
 import Calc from "./pages/Calc/Calc";
 import CalcOnDay from "./pages/Calc/CalcOnDay/CalcOnDay";
 import CalcWeight from "./pages/Calc/CalcWeight/CalcWeight";
+import Diet from "./pages/Diet/Diet";
 
 export const App = () => {
   return (
@@ -20,6 +21,7 @@ export const App = () => {
       <Routes>
         <Route path="/signin" element={<SignIn />} />
         <Route path="/signup" element={<SignUp />} />
+        <Route path="/diet" element={<Diet />} />
         <Route path="/" element={<Main />} />
         <Route path="/calc" element={<Calc />}>
           <Route path="calconday" element={<CalcOnDay />} />
