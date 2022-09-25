@@ -1,0 +1,63 @@
+.abMain {
+    color: white;
+}
+
+.abImg, .abImg2, .abImg3 {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.abImg img, .abImg2 img, .abImg3 img {
+    width: 50%;
+}
+
+.workMain {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.zag {
+    display: flex;
+    justify-content: center;
+}
+
+.wrapWork {
+    width: 40%;
+    display: flex;
+    margin-top: 20px;
+    background-color: #ffc00f;
+    color: black;
+    border-radius: 6px;
+    transition: 1s;
+}
+
+.wrapWork:hover {
+    transform: scale(1.04);
+}
+
+.loader {
+    display: flex;
+    justify-content: center;
+}
+
+.wrapImg {
+    width: 40%;
+}
+
+.wrapText {
+    width: 60%;
+    box-sizing: border-box;
+    padding: 15px 20px;
+    word-break: break-all;
+    margin: auto 0;
+}
+
+.wrapImg img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+}
