@@ -24,14 +24,14 @@ const CalcOnDay = () => {
             return item
         }
     })
-    setCalories(productCalories.calories * value)
+    setCalories(productCalories.calories * value/100)
     e.preventDefault()
   }
 
   return (
     <div className={styles.form_conteiner}>
         <div className={styles.calories}>
-        {active ? <h1>{calories}</h1> : false}
+        {active ? <h1>{calories} Ккал</h1> : false}
         </div>
       <form onSubmit={handleCalculate} className={styles.form}>
         <select value={product} onChange={(e) => setProduct(e.target.value)} name="" id="">
