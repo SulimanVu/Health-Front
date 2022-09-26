@@ -99,60 +99,70 @@ const BoyBody = () => {
           className={styles.quads_a}
           src="https://musclewiki.com/static/Crops/01.A-Quads.png"
           alt="#"
+          onClick={(e) => handleClick(e)}
           title="Квадрицепс"
         />
         <img
           className={styles.quads_b}
           src="https://musclewiki.com/static/Crops/01.B-Quads.png"
           alt="#"
+          onClick={(e) => handleClick(e)}
           title="Квадрицепс"
         />
         <img
           className={styles.calves_a}
           src="https://musclewiki.com/static/Crops/13.A-Calves.png"
           alt="#"
+          onClick={(e) => handleClick(e)}
           title="Икроно́жная мышца"
         />
         <img
           className={styles.calves_b}
           src="https://musclewiki.com/static/Crops/13.B-Calves.png"
           alt="#"
+          onClick={(e) => handleClick(e)}
           title="Икроно́жная мышца"
         />
         <img
           className={styles.back_traps_a}
           src="https://musclewiki.com/static/Crops/08.B-Traps.png"
           alt="#"
+          onClick={(e) => handleClick(e)}
           title="Трапецивидная мышца"
         />
         <img
           className={styles.back_traps_b}
           src="https://musclewiki.com/static/Crops/08.C-Traps.png"
           alt="#"
+          onClick={(e) => handleClick(e)}
           title="Трапецивидная мышца"
         />
         <img
           className={styles.back_shoulders_a}
           src="https://musclewiki.com/static/Crops/07.C-Deltoids.png"
           alt="#"
+          onClick={(e) => handleClick(e)}
           title="Плечо"
         />
         <img
           className={styles.back_shoulders_b}
           src="https://musclewiki.com/static/Crops/07.D-Deltoids.png"
           alt="#"
+          onClick={(e) => handleClick(e)}
           title="Плечо"
         />
         <img
           className={styles.triceps_a}
           src="https://musclewiki.com/static/Crops/09.A-Triceps.png"
           alt="#"
+          onClick={(e) => handleClick(e)}
           title="Трицепс"
         />
         <img
           className={styles.triceps_b}
           src="https://musclewiki.com/static/Crops/09.B-Triceps.png"
           alt="#"
+          onClick={(e) => handleClick(e)}
           title="Трицепс"
         />
         <img
@@ -174,12 +184,14 @@ const BoyBody = () => {
           className={styles.back_forearms_a}
           src="https://musclewiki.com/static/Crops/14.C-Forearms.png"
           alt="#"
+          onClick={(e) => handleClick(e)}
           title="Предплечье"
         />
         <img
           className={styles.back_forearms_b}
           src="https://musclewiki.com/static/Crops/14.D-Forearms.png"
           alt="#"
+          onClick={(e) => handleClick(e)}
           title="Предплечье"
         />
         <img
