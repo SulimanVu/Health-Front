@@ -66,7 +66,7 @@ const CalcWeight = () => {
         </div>
       </div>
       <div className={style.modalMain}>
-        <div className={style.modal}>{modal ? `Для похудения и поддержания вашего веса в тонусе, вам необходимо потреблять ${sum} калорий` : null}</div>
+        <div className={style.modal}>{modal ? `Для похудения и поддержания вашего веса в тонусе, вам необходимо потреблять ${sum} калорий в день` : null}</div>
       </div>
     </>
   );
