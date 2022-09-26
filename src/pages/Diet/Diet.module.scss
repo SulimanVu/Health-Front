@@ -47,6 +47,10 @@
 }
 .cardtext p {
     color: white;
-    
     text-align: center;
+}
+.loaders {
+    display: flex;
+    justify-content: center;
+    border-bottom: none !important;
 }
