@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import styles from "./boybody.module.scss";
 import { useDispatch } from "react-redux";
 import { fetchMuscle } from "../../../features/muscleSlice";
-import { saveMuscle } from "../../../features/muscleSlice";
 import { useNavigate } from "react-router-dom";
 
 const BoyBody = () => {
@@ -14,7 +13,7 @@ const BoyBody = () => {
   }, [dispatch]);
 
   const handleClick = (e) => {
-    dispatch(saveMuscle(e.target.title));
+    localStorage.setItem('title', e.target.title);
     navigate("/oneMuscle");
   };
 

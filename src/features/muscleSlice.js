@@ -2,7 +2,6 @@ import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
   muscle: [],
-  oneMuscle: null,
   loader: false,
 };
 
@@ -39,11 +38,7 @@ export const addMuscle = createAsyncThunk(
 const muscleSlice = createSlice({
   name: "muscle",
   initialState,
-  reducers: {
-    saveMuscle: (state, action) => {
-      state.oneMuscle = action.payload;
-    },
-  },
+  reducers: {},
   extraReducers: (builder) =>
     builder
       ////////////////FETCH-MUSCLE/////////////////
