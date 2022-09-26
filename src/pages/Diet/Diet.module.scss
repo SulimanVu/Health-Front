@@ -1,16 +1,17 @@
 .cardsbody {
-    background-color: rgb(15, 15, 15);
+    margin: 20px;
+    background-color: #151515;
     color:  #ffc000;
     display: flex;
     flex-wrap: wrap;
-
+    box-shadow: 0 2px 5px solid #fff;
 }
 .image {
     border-radius: 45px;
     width: 50%;
 }
 .image img {
-    width: 90%;
+    width: 70%;
 }
 .cardtext {
     text-align: right;
@@ -20,9 +21,6 @@
     align-content: center;
     justify-content: center;
     padding: 0 20px;
-}
-.card {
-
 }
 .cards :hover div {
     border-top-left-radius: 10px;

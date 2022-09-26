@@ -4,6 +4,7 @@ import { fetchDiet } from "../../features/dietSlice";
 import styles from "./main.module.scss";
 import { motion } from "framer-motion";
 import { Dna } from "react-loader-spinner";
+import { Link } from "react-router-dom";
 
 const Main = () => {
   const diet = useSelector((state) => state.diet.diet);
@@ -27,7 +28,7 @@ const Main = () => {
             <h3>Do you like to eat tasty and healthy?</h3>
             <h1>Don't wait !</h1>
             <h4>Find the right and healthy way to eat with us</h4>
-            <button>View diets</button>
+            <Link to={'/diet'}><button>View diets</button></Link>
           </motion.div>
         </div>
         <div className={styles.block}></div>
