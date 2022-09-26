@@ -74,8 +74,14 @@
       width: 40%;
       box-sizing: border-box;
     }
-    h1 {
+    .h1 {
+      list-style-type: none;
+      text-decoration: none;
+      color: #fff;
       font-weight: 200;
+      &:hover{
+        color: #ffd600;
+      }
     }
   }
 }

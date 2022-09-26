@@ -54,7 +54,7 @@ const Main = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 key={index}
               >
-                <h1>{item.name}</h1>
+                <Link to={'/diet'} className={styles.h1}><h1>{item.name}</h1></Link>
               </motion.div>
             );
           })
