@@ -2,17 +2,41 @@
     color: white;
 }
 
-.abImg, .abImg2, .abImg3 {
+.abImg,
+.abImg2,
+.abImg3 {
     width: 50%;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
-.abImg img, .abImg2 img, .abImg3 img {
+.tex1 {
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.abText1 {
     width: 50%;
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin: auto 0;
+    box-sizing: border-box;
+    padding: 10px 50px;
+}
+
+.abImg img,
+.abImg2 img,
+.abImg3 img {
+    width: 40%;
+    height: 90%;
 }
 
 .workMain {
+    margin-top: 30px;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -22,6 +46,11 @@
 .zag {
     display: flex;
     justify-content: center;
+}
+
+.zag h1 {
+    margin-top: 10px;
+    color: #ffc00f;
 }
 
 .wrapWork {
