@@ -10,11 +10,8 @@ import telegramm from '../../public/telegram.svg'
 import vk from '../../public/vk.svg'
 
 import { useState } from "react";
-import cn from "classnames";
-import { Link, useLocation } from "react-router-dom";
 
 const Footer = () => {
-  const location = useLocation();
   const [active, setActive] = useState(false);
   return (
     <div className={active ? styles.footer_active : styles.footer}>

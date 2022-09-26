@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import styles from "./boybody.module.scss";
 import { useDispatch } from "react-redux";
 import { fetchMuscle } from "../../../features/muscleSlice";
-import { saveMuscle } from "../../../features/muscleSlice";
 import { useNavigate } from "react-router-dom";
 
 const BoyBody = () => {
@@ -14,7 +13,7 @@ const BoyBody = () => {
   }, [dispatch]);
 
   const handleClick = (e) => {
-    dispatch(saveMuscle(e.target.title));
+    localStorage.setItem('title', e.target.title);
     navigate("/oneMuscle");
   };
 
@@ -124,31 +123,37 @@ const BoyBody = () => {
           className={styles.back_traps_a}
           src="https://musclewiki.com/static/Crops/08.B-Traps.png"
           alt="#"
+          title="Трапецивидная мышца"
         />
         <img
           className={styles.back_traps_b}
           src="https://musclewiki.com/static/Crops/08.C-Traps.png"
           alt="#"
+          title="Трапецивидная мышца"
         />
         <img
           className={styles.back_shoulders_a}
           src="https://musclewiki.com/static/Crops/07.C-Deltoids.png"
           alt="#"
+          title="Плечо"
         />
         <img
           className={styles.back_shoulders_b}
           src="https://musclewiki.com/static/Crops/07.D-Deltoids.png"
           alt="#"
+          title="Плечо"
         />
         <img
           className={styles.triceps_a}
           src="https://musclewiki.com/static/Crops/09.A-Triceps.png"
           alt="#"
+          title="Трицепс"
         />
         <img
           className={styles.triceps_b}
           src="https://musclewiki.com/static/Crops/09.B-Triceps.png"
           alt="#"
+          title="Трицепс"
         />
         <img
           className={styles.back_lats_a}
@@ -169,11 +174,13 @@ const BoyBody = () => {
           className={styles.back_forearms_a}
           src="https://musclewiki.com/static/Crops/14.C-Forearms.png"
           alt="#"
+          title="Предплечье"
         />
         <img
           className={styles.back_forearms_b}
           src="https://musclewiki.com/static/Crops/14.D-Forearms.png"
           alt="#"
+          title="Предплечье"
         />
         <img
           className={styles.back_glutes}

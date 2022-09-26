@@ -6,15 +6,15 @@ import { useEffect } from "react";
 import { fetchMuscle } from "../../features/muscleSlice";
 
 const OneMuscle = () => {
-  const dispatch = useDispatch()
-  const muscle = useSelector((state) => state.muscle.oneMuscle);
+  const dispatch = useDispatch();
+  const title = localStorage.getItem("title");
 
   const arrMuscle = useSelector((state) =>
-    state.muscle.muscle.filter((item) => item.name === muscle)
+    state.muscle.muscle.filter((item) => item.name === title)
   );
-  useEffect(()=>{
-    dispatch(fetchMuscle())
-  }, [dispatch])
+  useEffect(() => {
+    dispatch(fetchMuscle());
+  }, [dispatch]);
 
   return (
     <div className={styles.muscle_main}>
@@ -32,7 +32,7 @@ const OneMuscle = () => {
           <div key={index}>
             <div className={styles.info_block}>
               <div className={styles.muscle_img}>
-                  <img src={item.img} alt="#" />
+                <img src={item.img} alt="#" />
               </div>
               <div className={styles.muscle_text}>
                 <h1>{item.name}</h1>
