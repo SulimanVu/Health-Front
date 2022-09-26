@@ -2,6 +2,7 @@ import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
   diet: [],
+  loader: false,
 };
 
 export const fetchDiet = createAsyncThunk("fetch/diet", async (_, thunkAPI) => {
@@ -54,9 +55,13 @@ const dietSlice = createSlice({
   reducers: {},
   extraReducers: (builder) => {
     builder
-    .addCase(fetchDiet.fulfilled, (state, action) => {
-      state.diet = action.payload;
-    })
+      .addCase(fetchDiet.fulfilled, (state, action) => {
+        state.diet = action.payload;
+        state.loader = false
+      })
+      .addCase(fetchDiet.pending, (state, action) => {
+        state.loader = true
+      })
       .addCase(addDiet.fulfilled, (state, action) => {
         state.diet.push(action.payload);
       })
