@@ -41,7 +41,6 @@ const muscleSlice = createSlice({
   initialState,
   reducers: {
     saveMuscle: (state, action) => {
-      console.log(action.payload);
       state.oneMuscle = action.payload;
     },
   },

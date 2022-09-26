@@ -48,3 +48,25 @@
     }
   }
 }
+
+.link {
+  list-style-type: none;
+  text-decoration: none;
+  width: fit-content;
+  .return {
+    width: fit-content;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    img {
+      transform: rotate(180deg);
+      filter: invert(100%);
+      width: 25px;
+    }
+    span {
+      color: #fff;
+      font-size: 18px;
+      font-weight: 400;
+    }
+  }
+}
