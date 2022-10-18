@@ -4,6 +4,7 @@ import { fetchDiet } from "../../features/dietSlice";
 import { useSelector } from "react-redux/es/exports";
 import styles from "../../pages/Diet/Diet.module.scss";
 import { Dna } from "react-loader-spinner";
+import { serverUrl } from '../../serverUrl';
 
 const Diet = () => {
   const dispatch = useDispatch();
@@ -35,7 +36,7 @@ const Diet = () => {
               <div className={styles.cards}>
                 <div className={styles.image}>
                   <img
-                    src={`http://localhost:3010/images/${item.image}`}
+                    src={`${serverUrl}/images/${item.image}`}
                     alt="#"
                   />
                 </div>

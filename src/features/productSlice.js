@@ -1,4 +1,5 @@
 const { createSlice, createAsyncThunk } = require("@reduxjs/toolkit")
+import { serverUrl } from '../serverUrl';
 
 const initialState = {
     products:[]
@@ -8,7 +9,7 @@ export const fetchProduct = createAsyncThunk(
     'product/get',
     async (_, thunkAPI) => {
         try {
-            const res = await fetch("http://localhost:3010/product")
+            const res = await fetch(`${serverUrl}/product`)
             const products = res.json()
             return products
         } catch (e) {

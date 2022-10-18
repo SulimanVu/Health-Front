@@ -9,6 +9,7 @@ import znak from './aboutImg/znak.png';
 import ovosh from './aboutImg/ovosh.png';
 import Aos from 'aos';
 import 'aos/dist/aos.css'
+import { serverUrl } from '../../serverUrl';
 
 const About = () => {
     const work = useSelector(state => state.work.work);
@@ -65,7 +66,7 @@ const About = () => {
             <div className={style.zag}><h1>Лучшие диетологи</h1></div>
             <div className={style.workMain}>{work.map((item) => {
                 return <div className={style.wrapWork}>
-                    <div className={style.wrapImg}><img src={`http://localhost:3010/images/${item.image}`} alt='asdw' /></div>
+                    <div className={style.wrapImg}><img src={`${serverUrl}/images/${item.image}`} alt='asdw' /></div>
                     <div className={style.wrapText}>
                         <p><b>{item.name}</b></p>
                         <p>{item.description}</p>
