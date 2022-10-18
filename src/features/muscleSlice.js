@@ -1,4 +1,5 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
+import { serverUrl } from '../serverUrl';
 
 const initialState = {
   muscle: [],
@@ -9,7 +10,7 @@ export const fetchMuscle = createAsyncThunk(
   "fetch/muscle",
   async (_, thunkAPI) => {
     try {
-      const res = await fetch("http://localhost:3010/muscle");
+      const res = await fetch(`${serverUrl}/muscle`);
       const data = await res.json();
       return data;
     } catch (error) {
@@ -22,7 +23,7 @@ export const addMuscle = createAsyncThunk(
   "add/muscle",
   async ({ name, description }, thunkAPI) => {
     try {
-      const res = await fetch("http://localhost:3010/muscle", {
+      const res = await fetch(`${serverUrl}/muscle`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ name, description }),

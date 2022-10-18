@@ -1,4 +1,5 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
+import { serverUrl } from '../serverUrl';
 
 const initialState = {
   diet: [],
@@ -7,7 +8,7 @@ const initialState = {
 
 export const fetchDiet = createAsyncThunk("fetch/diet", async (_, thunkAPI) => {
   try {
-    const res = await fetch("http://localhost:3010/diet");
+    const res = await fetch(`${serverUrl}/diet`);
     const data = await res.json();
     return data;
   } catch (e) {
@@ -19,7 +20,7 @@ export const addDiet = createAsyncThunk(
   "add/diet",
   async ({ name, description, product }, thunkAPI) => {
     try {
-      const res = await fetch("http://localhost:3010/diet", {
+      const res = await fetch(`${serverUrl}/diet`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -41,7 +42,7 @@ export const addDiet = createAsyncThunk(
 export const deleteDiet = createAsyncThunk(
   "delete/diet",
   async (id, thunkAPI) => {
-    const res = await fetch(`http://localhost:3010/diet${id}`, {
+    const res = await fetch(`${serverUrl}/diet${id}`, {
       method: "DELETE",
     });
     const data = await res.json();
