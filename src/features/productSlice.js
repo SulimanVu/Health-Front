@@ -1,5 +1,5 @@
-import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
-import { serverUrl } from '../serverUrl';
+const { createSlice, createAsyncThunk } = require("@reduxjs/toolkit")
+const { serverUrl } = require('../serverUrl');
 
 const initialState = {
     products:[]
