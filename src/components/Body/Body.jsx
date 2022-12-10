@@ -21,13 +21,13 @@ const Body = () => {
         >
           male
         </Link>
-        <Link
+        {/* <Link
           className={cn(styles.link, !male && styles.active)}
           onClick={handleClick}
           to={"girl"}
         >
           female
-        </Link>
+        </Link> */}
       </div>
       <Outlet />
     </div>
